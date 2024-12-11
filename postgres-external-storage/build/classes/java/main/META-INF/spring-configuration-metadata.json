@@ -1,0 +1,71 @@
+{
+  "groups": [
+    {
+      "name": "conductor.external-payload-storage.postgres",
+      "type": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.external-payload-storage.postgres.conductor-url",
+      "type": "java.lang.String",
+      "description": "URL, that can be used to pull the json configurations, that will be downloaded from PostgreSQL to the conductor server. For example: for local development it is \"http:\/\/localhost:8080\"",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.max-data-days",
+      "type": "java.lang.Integer",
+      "description": "Maximum count of days of data age in PostgreSQL database. After overcoming limit, the oldest data will be deleted.",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.max-data-months",
+      "type": "java.lang.Integer",
+      "description": "Maximum count of months of data age in PostgreSQL database. After overcoming limit, the oldest data will be deleted.",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.max-data-rows",
+      "type": "java.lang.Long",
+      "description": "Maximum count of data rows in PostgreSQL database. After overcoming this limit, the oldest data will be deleted.",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties"
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.max-data-years",
+      "type": "java.lang.Integer",
+      "description": "Maximum count of years of data age in PostgreSQL database. After overcoming limit, the oldest data will be deleted.",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.password",
+      "type": "java.lang.String",
+      "description": "Password for connecting to PostgreSQL database",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties"
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.table-name",
+      "type": "java.lang.String",
+      "description": "The PostgreSQL schema and table name where the payloads will be stored",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties",
+      "defaultValue": "external.external_payload"
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.url",
+      "type": "java.lang.String",
+      "description": "URL for connecting to PostgreSQL database",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties"
+    },
+    {
+      "name": "conductor.external-payload-storage.postgres.username",
+      "type": "java.lang.String",
+      "description": "Username for connecting to PostgreSQL database",
+      "sourceType": "com.netflix.conductor.postgres.config.PostgresPayloadProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: lombok-1.18.34.jar spring-boot-starter-3.3.0.jar spring-retr
+ y-2.0.6.jar spring-boot-autoconfigure-3.3.0.jar spring-boot-3.3.0.jar s
+ pring-boot-starter-logging-3.3.0.jar jakarta.annotation-api-2.1.1.jar s
+ pring-context-6.1.8.jar spring-aop-6.1.8.jar spring-beans-6.1.8.jar spr
+ ing-expression-6.1.8.jar spring-core-6.1.8.jar snakeyaml-2.2.jar jul-to
+ -slf4j-2.0.13.jar spring-jcl-6.1.8.jar micrometer-observation-1.13.0.ja
+ r slf4j-api-2.0.13.jar micrometer-commons-1.13.0.jar
+

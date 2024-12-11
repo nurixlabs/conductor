@@ -1,0 +1,126 @@
+{
+  "groups": [
+    {
+      "name": "conductor.cassandra",
+      "type": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.cassandra.cluster",
+      "type": "java.lang.String",
+      "description": "The name of the cassandra cluster",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.cassandra.event-execution-persistence-ttl",
+      "type": "java.time.Duration",
+      "description": "The time to live in seconds for which the event execution will be persisted",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "conductor.cassandra.event-handler-cache-refresh-interval",
+      "type": "java.time.Duration",
+      "description": "The time in seconds after which the in-memory event handler cache will be refreshed",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "60s"
+    },
+    {
+      "name": "conductor.cassandra.host-address",
+      "type": "java.lang.String",
+      "description": "The address for the cassandra database host",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "127.0.0.1"
+    },
+    {
+      "name": "conductor.cassandra.keyspace",
+      "type": "java.lang.String",
+      "description": "The keyspace to be used in the cassandra datastore",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "conductor"
+    },
+    {
+      "name": "conductor.cassandra.port",
+      "type": "java.lang.Integer",
+      "description": "The port to be used to connect to the cassandra database instance",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": 9142
+    },
+    {
+      "name": "conductor.cassandra.read-consistency-level",
+      "type": "com.datastax.driver.core.ConsistencyLevel",
+      "description": "The consistency level to be used for read operations",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "LOCAL_QUORUM"
+    },
+    {
+      "name": "conductor.cassandra.replication-factor-key",
+      "type": "java.lang.String",
+      "description": "The key to be used while configuring the replication factor",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "replication_factor"
+    },
+    {
+      "name": "conductor.cassandra.replication-factor-value",
+      "type": "java.lang.Integer",
+      "description": "The replication factor value with which the keyspace is configured",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "conductor.cassandra.replication-strategy",
+      "type": "java.lang.String",
+      "description": "The replication strategy with which to configure the keyspace",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "SimpleStrategy"
+    },
+    {
+      "name": "conductor.cassandra.shard-size",
+      "type": "java.lang.Integer",
+      "description": "The number of tasks to be stored in a single partition which will be used for sharding workflows in the datastore",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": 100
+    },
+    {
+      "name": "conductor.cassandra.task-def-cache-refresh-interval",
+      "type": "java.time.Duration",
+      "description": "The time in seconds after which the in-memory task definitions cache will be refreshed",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "60s"
+    },
+    {
+      "name": "conductor.cassandra.write-consistency-level",
+      "type": "com.datastax.driver.core.ConsistencyLevel",
+      "description": "The consistency level to be used for write operations",
+      "sourceType": "com.netflix.conductor.cassandra.config.CassandraProperties",
+      "defaultValue": "LOCAL_QUORUM"
+    }
+  ],
+  "hints": [
+    {
+      "name": "conductor.cassandra.read-consistency-level",
+      "providers": [
+        {
+          "name": "handle-as",
+          "parameters": {
+            "target": "java.lang.Enum"
+          }
+        }
+      ]
+    },
+    {
+      "name": "conductor.cassandra.write-consistency-level",
+      "providers": [
+        {
+          "name": "handle-as",
+          "parameters": {
+            "target": "java.lang.Enum"
+          }
+        }
+      ]
+    }
+  ]
+}

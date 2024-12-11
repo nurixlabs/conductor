@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "name": "conductor.event-queues.sqs",
+      "type": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.default-event-queue.type",
+      "type": "java.lang.String",
+      "description": "The default event queue type to listen on for the WAIT task.",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueConfiguration"
+    },
+    {
+      "name": "conductor.event-queues.sqs.authorized-accounts",
+      "type": "java.lang.String",
+      "description": "The AWS account Ids authorized to send messages to the queues",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.event-queues.sqs.batch-size",
+      "type": "java.lang.Integer",
+      "description": "The maximum number of messages to be fetched from the queue in a single request",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "conductor.event-queues.sqs.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable the use of AWS SQS implementation to provide queues for consuming events.",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueConfiguration"
+    },
+    {
+      "name": "conductor.event-queues.sqs.endpoint",
+      "type": "java.lang.String",
+      "description": "The endpoint to use to connect to a local SQS server for testing",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.event-queues.sqs.listener-queue-prefix",
+      "type": "java.lang.String",
+      "description": "The prefix to be used for the default listener queues",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.event-queues.sqs.poll-time-duration",
+      "type": "java.time.Duration",
+      "description": "The polling interval (in milliseconds)",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": "100ms"
+    },
+    {
+      "name": "conductor.event-queues.sqs.visibility-timeout",
+      "type": "java.time.Duration",
+      "description": "The visibility timeout (in seconds) for the message on the queue",
+      "sourceType": "com.netflix.conductor.sqs.config.SQSEventQueueProperties",
+      "defaultValue": "60s"
+    }
+  ],
+  "hints": [
+    {
+      "name": "conductor.default-event-queue.type",
+      "values": [
+        {
+          "value": "sqs",
+          "description": "Use AWS SQS as the event queue to listen on for the WAIT task."
+        }
+      ]
+    }
+  ]
+}

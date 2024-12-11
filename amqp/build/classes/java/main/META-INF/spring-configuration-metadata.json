@@ -1,0 +1,174 @@
+{
+  "groups": [
+    {
+      "name": "conductor.event-queues.amqp",
+      "type": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.event-queues.amqp.auto-delete",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "conductor.event-queues.amqp.batch-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "conductor.event-queues.amqp.connection-timeout-in-milli-secs",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 180000
+    },
+    {
+      "name": "conductor.event-queues.amqp.content-encoding",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": "UTF-8"
+    },
+    {
+      "name": "conductor.event-queues.amqp.content-type",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": "application\/json"
+    },
+    {
+      "name": "conductor.event-queues.amqp.delivery-mode",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 2
+    },
+    {
+      "name": "conductor.event-queues.amqp.durable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "conductor.event-queues.amqp.duration",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 1000
+    },
+    {
+      "name": "conductor.event-queues.amqp.exchange-type",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": "topic"
+    },
+    {
+      "name": "conductor.event-queues.amqp.exclusive",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "conductor.event-queues.amqp.handshake-timeout-in-milli-secs",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 180000
+    },
+    {
+      "name": "conductor.event-queues.amqp.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    },
+    {
+      "name": "conductor.event-queues.amqp.limit",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 50
+    },
+    {
+      "name": "conductor.event-queues.amqp.listener-queue-prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.event-queues.amqp.max-channel-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 5000
+    },
+    {
+      "name": "conductor.event-queues.amqp.network-recovery-interval-in-milli-secs",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 5000
+    },
+    {
+      "name": "conductor.event-queues.amqp.password",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    },
+    {
+      "name": "conductor.event-queues.amqp.poll-time-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": "100ms"
+    },
+    {
+      "name": "conductor.event-queues.amqp.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    },
+    {
+      "name": "conductor.event-queues.amqp.queue-type",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": "classic"
+    },
+    {
+      "name": "conductor.event-queues.amqp.request-heartbeat-timeout-in-secs",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": 30
+    },
+    {
+      "name": "conductor.event-queues.amqp.sequential-msg-processing",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "conductor.event-queues.amqp.type",
+      "type": "com.netflix.conductor.contribs.queue.amqp.util.RetryType",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    },
+    {
+      "name": "conductor.event-queues.amqp.use-exchange",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "conductor.event-queues.amqp.use-nio",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "conductor.event-queues.amqp.use-ssl-protocol",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "conductor.event-queues.amqp.username",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    },
+    {
+      "name": "conductor.event-queues.amqp.virtual-host",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.contribs.queue.amqp.config.AMQPEventQueueProperties"
+    }
+  ],
+  "hints": []
+}

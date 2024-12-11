@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "conductor.redis-concurrent-execution-limit",
+      "type": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.redis-concurrent-execution-limit.client-name",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties"
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.host",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties"
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.max-connections-per-host",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.namespace",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties",
+      "defaultValue": "conductor"
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.password",
+      "type": "java.lang.String",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties"
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "conductor.redis-concurrent-execution-limit.type",
+      "type": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties$RedisType",
+      "sourceType": "com.netflix.conductor.redis.limit.config.RedisConcurrentExecutionLimitProperties"
+    }
+  ],
+  "hints": []
+}

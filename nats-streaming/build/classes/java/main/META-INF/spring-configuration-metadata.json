@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "conductor.event-queues.nats-stream",
+      "type": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.event-queues.nats-stream.cluster-id",
+      "type": "java.lang.String",
+      "description": "The cluster id of the STAN session",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties",
+      "defaultValue": "test-cluster"
+    },
+    {
+      "name": "conductor.event-queues.nats-stream.default-queue-group",
+      "type": "java.lang.String",
+      "description": "WAIT tasks default queue group, to make subscription round-robin delivery to single sub",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties",
+      "defaultValue": "wait-group"
+    },
+    {
+      "name": "conductor.event-queues.nats-stream.durable-name",
+      "type": "java.lang.String",
+      "description": "The durable subscriber name for the subscription",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties"
+    },
+    {
+      "name": "conductor.event-queues.nats-stream.listener-queue-prefix",
+      "type": "java.lang.String",
+      "description": "The prefix to be used for the default listener queues",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "conductor.event-queues.nats-stream.url",
+      "type": "java.lang.String",
+      "description": "The NATS connection url",
+      "sourceType": "com.netflix.conductor.contribs.queue.stan.config.NATSStreamProperties"
+    }
+  ],
+  "hints": []
+}

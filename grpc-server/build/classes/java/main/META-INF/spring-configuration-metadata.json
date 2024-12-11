@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "conductor.grpc-server",
+      "type": "com.netflix.conductor.grpc.server.GRPCServerProperties",
+      "sourceType": "com.netflix.conductor.grpc.server.GRPCServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conductor.grpc-server.port",
+      "type": "java.lang.Integer",
+      "description": "The port at which the gRPC server will serve requests",
+      "sourceType": "com.netflix.conductor.grpc.server.GRPCServerProperties",
+      "defaultValue": 8090
+    },
+    {
+      "name": "conductor.grpc-server.reflection-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the reflection service for Protobuf services",
+      "sourceType": "com.netflix.conductor.grpc.server.GRPCServerProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
